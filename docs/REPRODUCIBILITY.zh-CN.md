@@ -8,6 +8,14 @@
 
 ## 获取 checkpoint
 
+从 `v1.0.0` Release 下载：
+
+https://github.com/LYM0905/F1609-pose-tracking/releases/download/v1.0.0/snapshot-best-120.pt
+
+或者使用 GitHub CLI：
+
+    gh release download v1.0.0 --repo LYM0905/F1609-pose-tracking --pattern snapshot-best-120.pt
+
 下载 snapshot-best-120.pt 后先校验：
 
     python scripts/verify_checkpoint.py path/to/snapshot-best-120.pt
