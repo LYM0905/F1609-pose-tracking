@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "f1609-pose-tracking"
+version = "1.0.0"
+description = "DeepLabCut 8-point insect pose tracking with optional Tail-only repair"
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+dependencies = ["numpy>=1.24,<3", "pandas>=2.0,<3", "tables>=3.8", "PyYAML>=6"]
+
+[project.optional-dependencies]
+dlc = ["deeplabcut>=3.0", "torch>=2.1"]
+dev = ["pytest>=8"]
+
+[tool.setuptools.packages.find]
+where = ["src"]

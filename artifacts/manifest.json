@@ -1,0 +1,39 @@
+{
+  "release_id": "F1609-20260717",
+  "model": {
+    "name": "F1609_v0_raw_best120",
+    "framework": "DeepLabCut 3 PyTorch",
+    "bodyparts": ["Head", "T1", "T2", "T3", "A3", "A5", "A7", "Tail"],
+    "selection": "internal mAP checkpoint followed by locked human review"
+  },
+  "checkpoint": {
+    "filename": "snapshot-best-120.pt",
+    "sha256": "504521C281BF9C1E524B470C590300CFD1FB18D5535C7A119A53DD9DF8A4BC79",
+    "bytes": 95869810,
+    "distribution": "GitHub Release asset or private artifact store"
+  },
+  "dataset_contract": {
+    "labeled_frames": 1629,
+    "train_frames": 1548,
+    "internal_test_frames": 81,
+    "locked_videos_used_for_training": 0
+  },
+  "internal_fixed81": {
+    "mAP": 83.2312,
+    "mAR": 88.3951,
+    "rmse_px": 6.0381,
+    "rmse_pcutoff_px": 5.6477,
+    "pcutoff": 0.6
+  },
+  "postprocessing": {
+    "default": "none",
+    "optional": "Tail repair v2",
+    "modified_bodyparts": ["Tail"],
+    "accepted_scope": "16 locked short-validation segments reviewed by the user"
+  },
+  "rejected_experiment": {
+    "name": "F1609_v7_P2_matched semantic loss",
+    "gate_d_status": "failed_stop_semantic_probe",
+    "gate_d_summary_sha256": "CD072CAA4951DF0A966AD1EFD8C6BD30F8726CE070D425ECA44814831EC0A555"
+  }
+}

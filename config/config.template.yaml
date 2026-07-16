@@ -1,0 +1,41 @@
+Task: vp
+scorer: jerry
+date: Apr26
+multianimalproject: false
+identity: null
+project_path: __PROJECT_PATH__
+engine: pytorch
+video_sets: {}
+bodyparts: [Head, T1, T2, T3, A3, A5, A7, Tail]
+start: 0
+stop: 1
+numframes2pick: 200
+skeleton:
+- [Head, T1]
+- [T1, T2]
+- [T2, T3]
+- [T3, A3]
+- [A3, A5]
+- [A5, A7]
+- [A7, Tail]
+skeleton_color: black
+pcutoff: 0.6
+dotsize: 5
+alphavalue: 0.7
+colormap: rainbow
+TrainingFraction: [0.95]
+iteration: 0
+default_net_type: resnet_50
+default_augmenter: default
+snapshotindex: -1
+detector_snapshotindex: -1
+batch_size: 8
+detector_batch_size: 1
+cropping: false
+x1: 0
+x2: 1920
+y1: 0
+y2: 1080
+corner2move2: [50, 50]
+move2corner: true
+SuperAnimalConversionTables: null

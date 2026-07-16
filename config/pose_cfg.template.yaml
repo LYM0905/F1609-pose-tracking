@@ -1,0 +1,16 @@
+dataset: __PROJECT_PATH__
+dataset_type: multi-animal-imgaug
+num_joints: 8
+all_joints:
+- [0]
+- [1]
+- [2]
+- [3]
+- [4]
+- [5]
+- [6]
+- [7]
+all_joints_names: [Head, T1, T2, T3, A3, A5, A7, Tail]
+net_type: resnet_50
+global_scale: 1
+scoremap_dir: test
